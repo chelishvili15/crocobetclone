@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <!-- w3 CSS  -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-banner-extrasquare-caps/css/bpg-banner-extrasquare-caps.min.css">
+
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-banner/css/bpg-banner.min.css">
+    
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Email -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script
+      type="text/javascript">
+      (function() {
+      emailjs.init("user_uUNnBBWOLRfMXRw9Fjj0p");
+      })();
+    </script>
+    <!-- ----------------------------- -->
+  </head>
+
+  <body >
+    <div class="w3-container w3-row" id="header">
+      <div class="w3-section w3-half">
+        <img src="https://m.crocobet.com/assets/icons/arrow-back.svg" alt="" id="backArrow">
+      </div>
+      <div class="w3-section w3-half">
+        <img src="https://m.crocobet.com/assets/images/crocobet-logo.png" alt="" id="logo" class="w3-image">
+      </div>
+    </div>
+    <div class="w3-section w3-center w3-margin">
+      <div class="w3-container">
+        <h1>შესვლა</h1>
+        <p>შეიყვანეთ თქვენი სახელი და პაროლი</p>
+      </div>
+      <input class="w3-input w3-section w3-border w3-border-dark-grey w3-round" type="text" placeholder="მომხმარებელი">
+      <input class="w3-input w3-border w3-border-dark-grey w3-round" type="password" placeholder="პაროლი">
+      <p class="w3-right">პაროლის აღდგენა</p>
+      <button class="w3-container w3-round-large w3-border-green" style="width:100%" onclick="sendMail()">
+        <p>შესვლა</p>
+      </button>
+      <p id="bolop">რეგისტრაცია</p>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+</html>
